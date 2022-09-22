@@ -1,0 +1,14 @@
+<nav role="navigation">
+
+
+<div id="nav" class="my-fancy-nav-wrapper">
+    <ul id="oldNav" class="nav">
+        <!-- Loop through the navigation items -->
+        {{#foreach navigation}}
+        <ul class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></ul>
+        {{/foreach}}
+        <!-- End the loop -->
+        <script src="{{asset "ghost-test.js"}}"></script>
+    </ul>
+    
+</div>
