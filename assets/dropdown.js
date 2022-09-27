@@ -1,54 +1,49 @@
-const element = document.querySelectorAll(".nav a");
+const elements = document.querySelectorAll(".nav a");
 
 const groups = [];
-element.forEach((el) => {
-  if (!el.attributes.href) return;
-  const href = el.attributes.href.nodeValue;
-  const split = href.split(/[/,-]/);
-  if (split.length <= 5) {
-    groups.push({
-      name: split[3],
+//finds all mainpages and gives a number
+elements.forEach((el) => {
+  const label = el.textContent;
+  const split = label.split(/[()]/);
+
+  if (split.length <= 1 || split[1].indexOf("main") != -1) {
+    let mainpage = {
+      name: split[0].trim(),
       path: el.attributes.href.nodeValue,
+      number: undefined,
       el: el,
       subPages: [],
-    });
+    };
+    if (split[1]) {
+      mainpage.number = split[1].replace(/\D/g, "");
+    }
+    groups.push(mainpage);
   }
 });
 
-element.forEach((el) => {
-  if (!el.attributes.href) return;
-  const href = el.attributes.href.nodeValue;
-  const split = href.split(/[/,-]/);
-  if (split.length >= 6) {
-    let semester;
-    let index;
-    split.forEach((str, i) => {
-      if (/[f,h]s\d{2}/.test(str)) {
-        semester = str;
-        index = i;
-      }
-    });
+//finds all subpages and gives a number
+elements.forEach((el) => {
+  const label = el.textContent;
 
-    let mainpage = groups.find((g) => {
-      return g.name == semester;
-    });
-    let name;
-    if (index == 3) {
-      name = split[index + 1];
-    } else {
-      name = "Showroom";
-    }
+  const split = label.split(/[()]/);
+
+  if (split.length > 1 && split[1].indexOf("sub") != -1) {
     let subPage = {
-      name: name,
+      name: split[0].trim(),
       path: el.attributes.href.nodeValue,
+      number: split[1].replace(/\D/g, ""),
       el: el,
     };
+
+    let mainpage = groups.find((g) => {
+      return g.number == subPage.number;
+    });
     mainpage.subPages.push(subPage);
   }
 });
 
+//create dropdown with main and subpages
 let nav = document.getElementById("nav");
-
 createNav(groups, nav);
 
 document.getElementById("oldNav").remove();
