@@ -1,16 +1,11 @@
 # Anleitung Casper Theme ändern:
 
-### 1. Ghost installation
-
-- Anleitung [Link](https://ghost.org/docs/install/ubuntu/#install-ghost-cli "Ghost install ubuntu") von Install Ghost-CLI bis Run the install process
-- Wichtig: für eine erfolgreiche installation muss es ein leerer Ordner sein
-
-### 2. Ghost auf Github herunterladen
+### 1. Ghost auf Github herunterladen
 
 - Casper-Dropdwon in Github als zip-Datei herunterladen
 - Ordner: [Link](https://github.com/digital-sustainability-lab/Casper-Dropdown "Casper-Dropdown")
 
-### 3. Casper-Dropdown auf Ghost hochladen
+### 2. Casper-Dropdown auf Ghost hochladen
 
 auf Ghost Website/ghost
 
@@ -21,24 +16,30 @@ auf Ghost Website/ghost
 - Casper-Dropdown.zip hochladen
 - Active Casper-Dropdown.zip
 
-### Dropdown erstellen
+### 3. Dropdown erstellen
 
 Gehe auf Ghost Settings / Navigation.
 Mainpage erstellen: Titel (main1) -die Zahl hinter main muss einmalig sein
 Subpage erstellen: Titel (subpage1) -die Zahl hinter sub muss die gleiche sein wie bei main, damit es eine Subpage wird
+
+### 4. Tags
+
+Für jedes neues Semester gibt es einen neuen Tag z.B HS21. Alle Posts vom Semester HS21 müssen müssen mit dem Tag HS21 getagt werden. Falls ein Post mehrere Tags hat muss der HS21 der erste Tag sein.
+Damit alle Post mit Tag HS21 im Shworoom HS21 angezeigt werden muss unter Seetings/Navigation der URL wie folgt geändert werden: https://showroom-bsc.lehre.digisus-lab.ch**/tag/hs21/**
 
 ### routing
 
 Damit auf Home nur Content vom aktuelle Sem. angezeigt wird müssen die anderen Semester ausgeblendet werden
 Gehe zu: Content/settings/routes.yaml
 hier muss folgendes ergänzt werden:
+Nach jedem Semester muss beim filter das alte Semester hinzugefügt werden, damit dieses auf der Home Seite ausgeblendet wird.
 
-```js
+```bash
  collections:
   /fs/:
     permalink: /fs/{slug}/
     template: index
-    filter: primary_tag:[hs22,fs22] #hs22 und fs22 wird jetzt nicht auf home(index) angezeigt
+    filter: primary_tag:[hs21] #hs21 wird jetzt nicht auf home(index) angezeigt
   /:
     permalink: /{slug}/
     template: index
@@ -47,6 +48,13 @@ taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
 ```
+
+# Für Devs
+
+### 1. Ghost installation
+
+- Anleitung [Link](https://ghost.org/docs/install/ubuntu/#install-ghost-cli "Ghost install ubuntu") von Install Ghost-CLI bis Run the install process
+- Wichtig: für eine erfolgreiche installation muss es ein leerer Ordner sein
 
 # Casper
 
