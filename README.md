@@ -34,7 +34,8 @@ Der komplette URL sollte danach so aussehen: https://showroom-bsc.lehre.digisus-
 
 ### Routing
 
-Damit auf Home nur Content vom aktuelle Semester angezeigt wird müssen die anderen Semester ausgeblendet werden
+Damit auf Home nur Content vom aktuelle Semester angezeigt wird müssen die anderen Semester ausgeblendet werden.
+
 Gehe zu: Content/settings/routes.yaml
 
 Nach jedem Semester muss beim Filter das alte Semester hinzugefügt werden, damit dieses auf der Home Seite ausgeblendet wird.
@@ -56,7 +57,7 @@ taxonomies:
 
 # Für Devs
 
-### 1. Ghost installation
+### Ghost installation
 
 - Anleitung [Link](https://ghost.org/docs/install/ubuntu/#install-ghost-cli "Ghost install ubuntu") von Install Ghost-CLI bis Run the install process
 - Wichtig: für eine erfolgreiche installation muss es ein leerer Ordner sein
