@@ -7,7 +7,8 @@
 
 ### 2. Casper-Dropdown auf Ghost hochladen
 
-auf Ghost Website/ghost
+Gehe Ghost Website/ghost
+Beta-Version: https://showroom-bsc.lehre.digisus-lab.ch/ghost
 
 - auf Settings (unten links)
 - Design
