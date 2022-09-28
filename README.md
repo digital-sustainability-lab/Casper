@@ -1,3 +1,53 @@
+# Anleitung Casper Theme ändern:
+
+### 1. Ghost installation
+
+- Anleitung [Link](https://ghost.org/docs/install/ubuntu/#install-ghost-cli "Ghost install ubuntu") von Install Ghost-CLI bis Run the install process
+- Wichtig: für eine erfolgreiche installation muss es ein leerer Ordner sein
+
+### 2. Ghost auf Github herunterladen
+
+- Casper-Dropdwon in Github als zip-Datei herunterladen
+- Ordner: [Link](https://github.com/digital-sustainability-lab/Casper-Dropdown "Casper-Dropdown")
+
+### 3. Casper-Dropdown auf Ghost hochladen
+
+auf Ghost Website/ghost
+
+- auf Settings (unten links)
+- Design
+- Change Theme unten links
+- upload Theme oben rechts
+- Casper-Dropdown.zip hochladen
+- Active Casper-Dropdown.zip
+
+### Dropdown erstellen
+
+Gehe auf Ghost Settings / Navigation.
+Mainpage erstellen: Titel (main1) -die Zahl hinter main muss einmalig sein
+Subpage erstellen: Titel (subpage1) -die Zahl hinter sub muss die gleiche sein wie bei main, damit es eine Subpage wird
+
+### routing
+
+Damit auf Home nur Content vom aktuelle Sem. angezeigt wird müssen die anderen Semester ausgeblendet werden
+Gehe zu: Content/settings/routes.yaml
+hier muss folgendes ergänzt werden:
+
+```js
+ collections:
+  /fs/:
+    permalink: /fs/{slug}/
+    template: index
+    filter: primary_tag:[hs22,fs22] #hs22 und fs22 wird jetzt nicht auf home(index) angezeigt
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
+```
+
 # Casper
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
@@ -29,7 +79,6 @@ One neat trick is that you can also create custom one-off templates by adding th
 - `tag-news.hbs` - Custom template for `/tag/news/` archive
 - `author-ali.hbs` - Custom template for `/author/ali/` archive
 
-
 # Development
 
 Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
@@ -56,13 +105,11 @@ yarn zip
 - Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
 - [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
 
-
 # SVG Icons
 
 Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
-
 
 # Copyright & License
 
