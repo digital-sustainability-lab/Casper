@@ -24,16 +24,20 @@ Subpage erstellen: Titel (subpage1) -die Zahl hinter sub muss die gleiche sein w
 
 ### 4. Tags
 
-Für jedes neues Semester gibt es einen neuen Tag z.B HS21. Alle Posts vom Semester HS21 müssen müssen mit dem Tag HS21 getagt werden. Falls ein Post mehrere Tags hat muss der HS21 der erste Tag sein.
-Damit alle Post mit Tag HS21 im Shworoom HS21 angezeigt werden muss unter Seetings/Navigation bei Showroom HS21, folgendes ergänzt werden: /tag/hs21/
+Für jedes neues Semester gibt es einen neuen Tag z.B HS21.
+
+- Alle Posts vom Semester HS21 müssen mit dem Tag HS21 getagt werden.
+- Falls ein Post mehrere Tags hat muss der HS21 der erste Tag sein.
+- Damit alle Post mit Tag HS21 im Shworoom HS21 angezeigt werden muss unter Seetings/Navigation bei Showroom HS21, folgendes ergänzt werden: /tag/hs21/
+
 Der komplette URL sollte danach so aussehen: https://showroom-bsc.lehre.digisus-lab.ch/tag/hs21/
 
-### routing
+### Routing
 
-Damit auf Home nur Content vom aktuelle Sem. angezeigt wird müssen die anderen Semester ausgeblendet werden
+Damit auf Home nur Content vom aktuelle Semester angezeigt wird müssen die anderen Semester ausgeblendet werden
 Gehe zu: Content/settings/routes.yaml
-hier muss folgendes ergänzt werden:
-Nach jedem Semester muss beim filter das alte Semester hinzugefügt werden, damit dieses auf der Home Seite ausgeblendet wird.
+
+Nach jedem Semester muss beim Filter das alte Semester hinzugefügt werden, damit dieses auf der Home Seite ausgeblendet wird.
 
 ```bash
  collections:
