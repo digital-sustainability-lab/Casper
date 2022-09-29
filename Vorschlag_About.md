@@ -63,4 +63,8 @@ taxonomies:
   author: /author/{slug}/
 ```
 
-z.B nach Ende FS22 muss der filter so angepasst werden: ``filter: primary_tag:[hs21,fs22]`
+z.B nach Ende FS22 muss der filter so angepasst werden:
+
+```
+ filter: primary_tag:[hs21,fs22]
+```
