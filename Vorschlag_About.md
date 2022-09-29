@@ -4,8 +4,8 @@
 
 Pages vom vorherigen Semester unbennen
 
-- Thematik zu Thematik (Semester+Jahr)
-- Themensponsoren zu Themensponsoren (Semester+Jahr)
+- Thematik zu Thematik (Semester+Jahr) unbennen
+- Themensponsoren zu Themensponsoren (Semester+Jahr) unbennen
 
 Neue Pages erstellen
 
@@ -28,11 +28,11 @@ Neue Pages erstellen
 - mit Doppelklick aufs Wort Verlinkungen hinzufügen
 - URL Thematik und Sponsoren: Pages-> Thematik-> oben rechts auf Vierreck -> unter Page URL in Grau:
 
-  ![Toggle-image](/assets/images/tags.png)
+  ![Toggle-image](/assets/images/thematik.png)
 
 - URL Showroom: Tags -> Semester auswählen -> unten am Slug in Grau geschrieben:
 
-  ![Toggle-image](/assets/images/thematik.png)
+  ![Toggle-image](/assets/images/tag.png)
 
 ### 3. Navigation
 
@@ -68,3 +68,5 @@ z.B nach Ende FS22 muss der filter so angepasst werden:
 ```
  filter: primary_tag:[hs21,fs22]
 ```
+
+Nach Anpassung Filter yaml Datei wieder hochladen.
