@@ -18,7 +18,8 @@ Neue Pages erstellen
 
 ### 3. About-Seite (Über diese Lehrveranstaltung)
 
-- Neues Toggle erstellen für vorheriges Semester
+Neues Toggle erstellen für vorheriges Semester
+
 - In eine Zeile klicken -> aufs + ->Toggle auswählen
 
   ![Toggle-image](/assets/images/about.png)
