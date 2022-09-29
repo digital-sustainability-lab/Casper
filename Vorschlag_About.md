@@ -21,7 +21,7 @@ Neue Pages erstellen
 - Neues Toggle erstellen für vorheriges Semester
 - In eine Zeile klicken -> aufs + ->Toggle auswählen
 
-![Toggle-image](/assets/images/about.png)
+  ![Toggle-image](/assets/images/about.png)
 
 - Toggle header: Thema (Semester Jahr)
 - Collapsible content: - Showroom -Thematik -Themensponsoren
@@ -38,7 +38,9 @@ Neue Pages erstellen
 
 - URL bei Thematik und Themensponsor anpassen
 
-**Wichtig für Studierende:** Alle Posts vom Semester X müssen mit dem Tag SemesterX getagt werden.Falls ein Post mehrere Tags hat muss der SemesterX der erste Tag sein. Ansonsten können die Posts nicht nach Semester zugeteilt werden.
+### **Wichtig für Studierende:**
+
+Alle Posts vom Semester X müssen mit dem Tag SemesterX getagt werden.Falls ein Post mehrere Tags hat muss der SemesterX der erste Tag sein. Ansonsten können die Posts nicht nach Semester zugeteilt werden.
 
 ### Routing
 
