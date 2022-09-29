@@ -1,6 +1,6 @@
 # Start neues Semester
 
-#### 1. Pages
+### 1. Pages
 
 Pages vom vorherigen Semester unbennen
 
@@ -12,29 +12,29 @@ Neue Pages erstellen
 - Thematik
 - Themensponsoren
 
-#### 2. Tags
+### 2. Tags
 
 - neuer Tag mit Semester + Jahr z.B FS23
 
-#### 3. About-Seite (Über diese Lehrveranstaltung)
+### 3. About-Seite (Über diese Lehrveranstaltung)
 
 - Neues Toggle erstellen für vorheriges Semester
 - In eine Zeile klicken -> aufs + ->Toggle auswählen
 
-![Toggle-image](/Home/Pictures.png)
+![Toggle-image](/assets/images/about.png)
 
 - Toggle header: Thema (Semester Jahr)
 - Collapsible content: - Showroom -Thematik -Themensponsoren
 - mit Doppelklick aufs Wort Verlinkungen hinzufügen
 - URL Thematik und Sponsoren: Pages-> Thematik-> oben rechts auf Vierreck -> unter Page URL in Grau:
 
-  ![Toggle-image](/Home/thematik.png)
+  ![Toggle-image](/assets/images/tags.png)
 
 - URL Showroom: Tags -> Semester auswählen -> unten am Slug in Grau geschrieben:
 
-  ![Toggle-image](/Home/tags.png)
+  ![Toggle-image](/assets/images/thematik.png)
 
-#### 3. Navigation
+### 3. Navigation
 
 - URL bei Thematik und Themensponsor anpassen
 
