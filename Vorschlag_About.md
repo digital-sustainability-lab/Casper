@@ -32,7 +32,7 @@ Neue Pages erstellen
 
 - URL Showroom: Tags -> Semester auswählen -> unten am Slug in Grau geschrieben:
 
-  ![Toggle-image](/assets/images/tag.png)
+  ![Toggle-image](/assets/images/tags.png)
 
 ### 3. Navigation
 
