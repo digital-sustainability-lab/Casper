@@ -8,7 +8,7 @@
 ### 2. Casper-Dropdown auf Ghost hochladen
 
 Gehe Ghost Website/ghost
-Beta-Version: https://showroom-bsc.lehre.digisus-lab.ch/ghost
+Beta-Version: https://showroom-bcs.digisus-lab.ch/ghost
 
 - auf Settings (unten links)
 - Design
@@ -31,7 +31,7 @@ Für jedes neues Semester gibt es einen neuen Tag z.B HS21.
 - Falls ein Post mehrere Tags hat muss der HS21 der erste Tag sein.
 - Damit alle Post mit Tag HS21 im Shworoom HS21 angezeigt werden muss unter Seetings/Navigation bei Showroom HS21, folgendes ergänzt werden: /tag/hs21/
 
-Der komplette URL sollte danach so aussehen: https://showroom-bsc.lehre.digisus-lab.ch/tag/hs21/
+Der komplette URL sollte danach so aussehen: https://showroom-bcs.digisus-lab.ch/ghost/tag/hs21/
 
 ### Routing
 
